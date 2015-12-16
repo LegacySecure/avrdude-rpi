@@ -1,6 +1,8 @@
 Using avrdude with the Raspberry Pi
 ===================================
 
+Based on [mharizanov's](https://github.com/mharizanov/avrdude-rpi) fork of [deanmao's](https://github.com/deanmao/avrdude-rpi) original work.
+
 Since the Raspberry Pi lacks a DTR pin that makes it oh-so-easy to upload your hex files into
 the avr, we need this hack to make it just as easy.  When you wire up your atmega chip, be sure
 to connect one of the digital gpio pins to the reset pin, and then you'll be able to use avrdude
