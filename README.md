@@ -9,6 +9,12 @@ as if your serial cable actually had a dtr pin.
 Instructions:
 -------------
 
+Install using script:
+
+    $ git clone https://github.com/openenergymonitor/avrdude-rpi.git ~/avrdude-rpi && ~/avrdude-rpi/install
+
+Manual Install: 
+
 Copy both files into your /usr/bin directory, then rename the original avrdude to avrdude-original
 and symlink avrdude-autoreset to become avrdude.
 
@@ -18,7 +24,14 @@ and symlink avrdude-autoreset to become avrdude.
     ln -s /usr/bin/avrdude-autoreset /usr/bin/avrdude
 
 Modify the autoreset script to use the pin that you wired up to the reset pin.  See the line in
-autoreset where we do "pin = 11" and change the 11 to your gpio pin number.
+autoreset where we do "pin = 22" and change the 22 to your gpio pin number.
 
 Now when you run avrdude from anywhere (including via arduino's normal UI) it will flag dtr when
 it is about to upload hex data.
+
+http://www.deanmao.com/2012/08/12/fixing-the-dtr-pin/
+
+Make sure Python is installed
+$sudo apt-get update
+$sudo apt-get install python-dev
+$sudo apt-get install python-rpi.gpio
