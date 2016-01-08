@@ -34,9 +34,13 @@ it is about to upload hex data.
 http://www.deanmao.com/2012/08/12/fixing-the-dtr-pin/
 
 Make sure Python is installed:
-
+<br/>
 `$sudo apt-get update`
-
+<br/>
 `$sudo apt-get install python-dev`
-
+<br/>
 `$sudo apt-get install python-rpi.gpio`
+
+##Programming
+Make sure your serial port is free. See image below for example programming. First the application that uses the serial port is stopped, then avrdude is called, then app is started again.
+![alt tag](http://i.imgur.com/LHabF1M.png)
