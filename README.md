@@ -13,7 +13,7 @@ Instructions:
 
 Install using script:
 
-    $ git clone https://github.com/openenergymonitor/avrdude-rpi.git ~/avrdude-rpi && ~/avrdude-rpi/install
+    $ git clone https://github.com/LowPowerLab/avrdude-rpi ~/avrdude-rpi && ~/avrdude-rpi/install
 
 Manual Install: 
 
