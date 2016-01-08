@@ -34,6 +34,6 @@ it is about to upload hex data.
 http://www.deanmao.com/2012/08/12/fixing-the-dtr-pin/
 
 Make sure Python is installed
-$sudo apt-get update
-$sudo apt-get install python-dev
-$sudo apt-get install python-rpi.gpio
+`$sudo apt-get update`
+`$sudo apt-get install python-dev`
+`$sudo apt-get install python-rpi.gpio`
